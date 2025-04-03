@@ -2,49 +2,4 @@
 @use "reset";
 @use "header";
 @use "nav";
-
-// .container-menu {
-//     display: flex;
-//     align-items: flex-start;
-//     gap: 20px;
-//   }
-  
-//   .button-category {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-//   }
-  
-//   .accordion {
-//     width: 150px;
-//     background: #f4f4f4;
-//     border: none;
-//     text-align: left;
-//     padding: 10px;
-//     font-size: 16px;
-//     cursor: pointer;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-  
-//   .panel-container {
-//     flex: 1; /* Ocupa o espaço disponível */
-//     position: relative;
-//   }
-  
-//   .panel {
-//     display: none;
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     width: 250px;
-//     background: #fff;
-//     padding: 10px;
-//     border: 1px solid #ddd;
-//   }
-  
-//   .panel.active {
-//     display: block;
-//   }
   

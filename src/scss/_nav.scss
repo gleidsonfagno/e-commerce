@@ -1,3 +1,5 @@
+
+
 .menu {
   ul {
     padding: 20px 16px;
@@ -41,9 +43,9 @@
 
 // O Conteiner que fica escondido e aparece com o clique ou hover
 .container-menu {
-  //   display: none;
+  display: none;
   position: absolute;
-  top: 183%;
+  top: 212%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 1261px;
@@ -86,8 +88,6 @@
         font-size: 14px;
 
         color: var(--grey-darkest);
-        // width: 189px;
-        // width: 100%;
         .arrow {
           padding-left: 90px;
         }
@@ -176,5 +176,12 @@
   .active {
     color: var(--primary-color) !important;
     font-weight: 700 !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
   }
 }

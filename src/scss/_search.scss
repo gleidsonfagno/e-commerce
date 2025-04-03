@@ -1,0 +1,32 @@
+.search {
+  margin: auto;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid var(--strocker-color);
+    width: 100%;
+    padding: 11px 20px;
+    border-radius: 11px;
+
+    .input-search-css {
+      outline: none;
+      border: none;
+      width: 100%;
+
+      &::placeholder {
+        font-family: var(--nunito-sans-font);
+        font-size: 14px;
+        color: var(--text-light-color);
+      }
+    }
+
+    img {
+      max-width: 24px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .search{
+      display: flex;
+    }
+  }

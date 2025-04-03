@@ -1,16 +1,21 @@
+@import "search";
+
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background); 
+  z-index: 1000; 
+  
   .header-promocao {
     background-color: var(--primary-color);
     p {
       color: var(--background);
       text-align: center;
-      font-family: Nunito Sans;
       font-weight: 700;
       font-size: 14px;
       line-height: 22px;
-      letter-spacing: 0%;
-
       padding: 7px 16px;
 
       .destaque-promocao {
@@ -25,95 +30,116 @@
     }
   }
 
-  .header-user {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  .header-content {
+    position: relative;
     max-width: 1259px;
-    margin: 0 auto;
-    padding: 17px 16px 23px 16px;
-
-    .header-user-contet {
-      display: flex;
-      flex-direction: row;
-      gap: 65px;
-      width: 100%;
-
-      .search {
+        margin: 0 auto;
+    
+    .header-user-content {
+      
+      .header-user {
         display: flex;
         flex-direction: row;
-        border: 1px solid var(--strocker-color);
-        max-width: 594px;
-        width: 100%;
-        padding: 11px 20px;
-        border-radius: 11px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    
+        // max-width: 1259px;
+        // margin: 0 auto;
+        padding: 17px 16px 23px 16px;
+    
+        .menu-mobile {
+          display: none;
+        }
+        .user-search{
+          display: flex;
+          align-items: center;
+          gap: 65px;
 
-        .input-search-css {
-          outline: none;
-          border: none;
-          width: 100%;
-
-          &::placeholder {
-            font-family: var(--nunito-sans-font);
-            font-size: 14px;
-            color: var(--text-light-color);
+          #search {
+            display: flex;
+            width: 594px;
+            max-width: 100%;
           }
         }
-
-        img {
-          max-width: 24px;
+  
+    
+        .user-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 24px;
+    
+          span {
+            display: flex;
+            cursor: pointer;
+    
+            .icon-user {
+              width: 20.57px;
+            }
+    
+            p {
+              padding-left: 8px;
+              font-size: 14px;
+              font-weight: bold;
+              line-height: 14px;
+            }
+    
+            strong {
+              background-color: var(--primary-color);
+              display: block;
+              height: 20px;
+              width: 20px;
+              border-radius: 20px;
+              color: var(--background);
+              text-align: center;
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+    
+          span:nth-child(2) {
+            position: relative;
+    
+            strong {
+              position: absolute;
+              top: -5px;
+              right: -9px;
+            }
+          }
         }
       }
     }
+  }
+}
 
-    .user-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
+@media screen and (max-width: 768px) {
+  .header {
+    .header-content {
+      .header-user-content {
+        padding: 0 16px 16px 16px;
+        .header-user {
+          justify-content: space-between;
+          padding: 17px 0 23px 0;
     
-      span {
-        display: flex;
-        cursor: pointer;
-    
-        .icon-user {
-          width: 20.57px;
+          .menu-mobile {
+            display: flex;
+          }
+  
+          .user-search {
+            #search {
+              display: none;
+              max-width: 594px;
+            }
+          }
         }
     
-        p {
-          padding-left: 8px;
-          font-size: 14px;
-          font-weight: bold;
-          line-height: 14px;
-        }
-    
-        strong {
-          background-color: var(--primary-color);
-          display: block;
-          height: 20px;
-          width: 20px;
-          border-radius: 20px;
-          color: var(--background);
-          text-align: center;
-          font-size: 12px;
-          line-height: 20px;
-        }
-      }
-    
-      // Estiliza apenas o <span> do carrinho
-      span:nth-child(2) {
-        position: relative;
-    
-        strong {
-          position: absolute;
-          top: -5px;
-          right: -9px;
+        .user-content{
+          .user-info {
+            display: none !important;
+          }
         }
       }
     }
-    
-
   }
 }

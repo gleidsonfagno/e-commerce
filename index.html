@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
       rel="stylesheet"
     />
+   
     <title>Avanti</title>
   </head>
   <body>
@@ -21,32 +22,51 @@
         </p>
       </div>
 
-      <div class="header-user">
-        <article class="header-user-contet">
+     <div class="header-content" >
 
-          <img src="src/assets/logo-dark.png" alt="logo Avanti" class="header-logo" />
-
+      <div class="header-user-content">
+        <div class="header-user">
+          <button class="menu-mobile">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="1" y1="12.4998" x2="22.7185" y2="12.4998" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <line x1="1" y1="23.1921" x2="22.7185" y2="23.1921" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              <line x1="1" y1="1.80762" x2="22.7185" y2="1.80762" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              
+          </button>
+          <!-- logo e input de busca -->
+          <article class="user-search">
+            <img src="src/assets/logo-dark.png" alt="logo Avanti" class="header-logo" />
   
-          <div class="search">
+  
+          <div class="search " id="search">
             <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
             <img src="src/assets/icon/searach.svg" alt="search" />
           </div>
-        </article>
+          </article>
+  
+  
+          <!-- fica o carrinho o icone do user -->
+          <article class="user-content">
+            <span class="user-info">
+              <img src="src/assets/icon/icon-user.png" alt="user" class="icon-user" />
+              <p>Ola, Jewelry!</p>
+            </span>
+          
+            <span class="cart-info">
+              <img src="src/assets/icon/icon-cart.png" alt="cart" />
+              <strong class="cart-count">2</strong>
+            </span>
+          </article>
+  
+        </div>
 
-        <article class="user-content">
-          <span class="user-info">
-            <img src="src/assets/icon/icon-user.png" alt="user" class="icon-user" />
-            <p>Ola, Jewelry!</p>
-          </span>
-        
-          <span class="cart-info">
-            <img src="src/assets/icon/icon-cart.png" alt="cart" />
-            <strong class="cart-count">2</strong>
-          </span>
-        </article>
-        
+        <div class="search">
+            <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
+            <img src="src/assets/icon/searach.svg" alt="search" />
+          </div>
       </div>
-
+      
       <nav class="menu" aria-label="Menu de Navegação">
         <ul>
           <li>
@@ -207,25 +227,7 @@
             </ul>
           </ul>
           </div>
-          <!-- <div class="panel">
-            <ul>
-              <li><a href="#">Tech Gadgets</a></li>
-              <li><a href="#">Smartphones</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Wearables</a></li>
-              <li><a href="#">Smart Home</a></li>
-              <li><a href="#">Gaming Consoles</a></li>
-              <li><a href="#">VR/AR</a></li>
-              <li><a href="#">PC Components</a></li>
-            </ul>
-          </div>
-          <div class="panel">
-            <ul>
-              <li><a href="#">Health & Fitness</a></li>
-              <li><a href="#">Workout Gear</a></li>
-              <li><a href="#">Nutrition</a></li>
-            </ul>
-          </div> -->
+         
         </div>
       
         <article class="card-panel">
@@ -236,6 +238,7 @@
       </div>
 
       </div>
+     </div>
  
     </header>
     
@@ -247,5 +250,6 @@
       </div>
     </section>
     
+    <script src="/src//js/menu-toggle.js"></script>
   </body>
 </html>
