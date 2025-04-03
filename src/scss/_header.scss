@@ -34,6 +34,8 @@
     position: relative;
     max-width: 1259px;
         margin: 0 auto;
+        padding: 0 16px
+        16px;
     
     .header-user-content {
       
@@ -44,9 +46,7 @@
         align-items: center;
         gap: 32px;
     
-        // max-width: 1259px;
-        // margin: 0 auto;
-        padding: 17px 16px 23px 16px;
+        padding: 17px 0 23px 0;
     
         .menu-mobile {
           display: none;
@@ -117,7 +117,7 @@
   .header {
     .header-content {
       .header-user-content {
-        padding: 0 16px 16px 16px;
+        // padding: 0 16px 16px 16px;
         .header-user {
           justify-content: space-between;
           padding: 17px 0 23px 0;
