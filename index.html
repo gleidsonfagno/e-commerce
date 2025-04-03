@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/stylesheets/index.css" />
+    <link rel="stylesheet" href="build/stylesheets/index.css"  />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +13,239 @@
     <title>Avanti</title>
   </head>
   <body>
-    <header>
-      <p>Ganhe  <span>R$10,00</span>  de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10</p>
+    <header class="header">
+      <div class="header-promocao">
+        <p>
+          Ganhe <span class="destaque-promocao">R$10,00</span> de desconto no seu primeiro pedido. Utilize o
+          cupom <span class="desconto">DESCONTO10</span>
+        </p>
+      </div>
+
+      <div class="header-user">
+        <article class="header-user-contet">
+
+          <img src="src/assets/logo-dark.png" alt="logo Avanti" class="header-logo" />
+
+  
+          <div class="search">
+            <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
+            <img src="src/assets/icon/searach.svg" alt="search" />
+          </div>
+        </article>
+
+        <article class="user-content">
+          <span class="user-info">
+            <img src="src/assets/icon/icon-user.png" alt="user" class="icon-user" />
+            <p>Ola, Jewelry!</p>
+          </span>
+        
+          <span class="cart-info">
+            <img src="src/assets/icon/icon-cart.png" alt="cart" />
+            <strong class="cart-count">2</strong>
+          </span>
+        </article>
+        
+      </div>
+
+      <nav class="menu" aria-label="Menu de Navegação">
+        <ul>
+          <li>
+            <button class="menu-toggle">
+             
+               <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="6" x2="13" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+              <a href="#">Todas as Categorias</a>
+            </button>
+          </li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+
+          <li><a href="#">Departamento</a></li>
+        </ul>
+
+      </nav>
+      
+      <!--  O Conteiner que fica escondido e aparece com o clique ou hover -->
+      <div class="container-menu">
+        <div class="button-category">
+
+          <div class="category-links">
+            <button class="accordion active">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+      
+            <button class="accordion">
+              Departamento
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+          </div>
+      
+        <div class="panel-container">
+          <div class="panel">
+            <ul>
+              <li><a href="#">Fashion Trends</a></li>
+            <li><a href="#">Streetwear</a></li>
+            <li><a href="#">Vintage Clothing</a></li>
+            <li><a href="#">Shoes & Sneakers</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Handbags</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Luxury Fashion</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Tech Gadgets</a></li>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Wearables</a></li>
+              <li><a href="#">Smart Home</a></li>
+              <li><a href="#">Gaming Consoles</a></li>
+              <li><a href="#">VR/AR</a></li>
+              <li><a href="#">PC Components</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Tech Gadgets</a></li>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Wearables</a></li>
+              <li><a href="#">Smart Home</a></li>
+              <li><a href="#">Gaming Consoles</a></li>
+              <li><a href="#">VR/AR</a></li>
+              <li><a href="#">PC Components</a></li>
+            </ul>
+          </ul>
+          </div>
+          <!-- <div class="panel">
+            <ul>
+              <li><a href="#">Tech Gadgets</a></li>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Wearables</a></li>
+              <li><a href="#">Smart Home</a></li>
+              <li><a href="#">Gaming Consoles</a></li>
+              <li><a href="#">VR/AR</a></li>
+              <li><a href="#">PC Components</a></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <ul>
+              <li><a href="#">Health & Fitness</a></li>
+              <li><a href="#">Workout Gear</a></li>
+              <li><a href="#">Nutrition</a></li>
+            </ul>
+          </div> -->
+        </div>
+      
+        <article class="card-panel">
+          <h2>Confira os Produtos <br> <strong>Que  <br> acabaram De chegar</strong></h2>
+          <button>Ver todos</button>
+        </article>
+
+      </div>
+
+      </div>
+ 
     </header>
+    
+    <section class="baner">
+      <img src="src/assets/hero-banner.png" alt="hero-banner">
+
+      <div>
+        <img src="src/assets/promotion.png" alt="promotion">
+      </div>
+    </section>
+    
   </body>
 </html>

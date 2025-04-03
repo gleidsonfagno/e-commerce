@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: var(--nunito-font);
+    font-family: var(--nunito-sans-font);
 
 }
 
@@ -14,11 +14,13 @@ a{
 button{
     border: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
 img{
     max-width: 100%;
     display: block;
+    object-fit: contain;
 }
 
 html{
@@ -27,4 +29,5 @@ html{
 
 body{
     background: var(--background);
+    color: var(--text-color);
 }
