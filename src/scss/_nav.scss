@@ -20,8 +20,8 @@
           font-weight: bolder;
         }
 
-        &:hover{
-            color: var(--primary-color) !important;
+        &:hover {
+          color: var(--primary-color) !important;
         }
       }
 
@@ -98,6 +98,16 @@
       justify-content: space-between;
       align-items: start;
       flex-wrap: wrap;
+      flex-direction: column;
+      gap: 17px;
+
+      p {
+        display: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
       .panel {
         display: flex;
         gap: 40px;
@@ -176,7 +186,6 @@
     font-weight: 700 !important;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .menu {

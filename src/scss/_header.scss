@@ -1,4 +1,4 @@
-@import "search";
+@use "search";
 
 .header {
   position: fixed;
@@ -32,13 +32,11 @@
 
   .header-content {
     position: relative;
-    max-width: 1259px;
+    max-width: 1261px;
         margin: 0 auto;
-        padding: 0 16px
-        16px;
+        padding: 0 16px;
     
-    .header-user-content {
-      
+    .header-user-content { 
       .header-user {
         display: flex;
         flex-direction: row;
@@ -116,8 +114,9 @@
 @media screen and (max-width: 768px) {
   .header {
     .header-content {
+      padding: 0 16px 16px 16px;
       .header-user-content {
-        // padding: 0 16px 16px 16px;
+        
         .header-user {
           justify-content: space-between;
           padding: 17px 0 23px 0;

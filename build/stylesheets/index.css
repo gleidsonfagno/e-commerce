@@ -43,6 +43,7 @@ html {
 body {
   background: var(--background);
   color: var(--text-color);
+  padding-top: 186px;
 }
 
 .search {
@@ -104,9 +105,9 @@ body {
 }
 .header .header-content {
   position: relative;
-  max-width: 1259px;
+  max-width: 1261px;
   margin: 0 auto;
-  padding: 0 16px 16px;
+  padding: 0 16px;
 }
 .header .header-content .header-user-content .header-user {
   display: flex;
@@ -169,6 +170,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .header .header-content {
+    padding: 0 16px 16px 16px;
+  }
   .header .header-content .header-user-content .header-user {
     justify-content: space-between;
     padding: 17px 0 23px 0;
@@ -271,6 +275,15 @@ body {
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 17px;
+}
+.container-menu .button-category .panel-container p {
+  display: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
 }
 .container-menu .button-category .panel-container .panel {
   display: flex;
