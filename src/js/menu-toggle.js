@@ -35,8 +35,6 @@ li_buttoon.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", () => {
-    console.log("Nova largura:", window.innerWidth);
-    console.log("Nova altura:", window.innerHeight);
 
     if (window.innerWidth <= 768){
         content_menu.style.display = "none";
