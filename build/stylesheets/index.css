@@ -3,6 +3,7 @@
   --text-color: #000000;
   --text-color-second: #656565;
   --text-color-third: #707070;
+  --baner-color: #E7E7EA ;
   --grey-darkest: #303030;
   --text-highlight: #00264E;
   --strocker-color: #DEDEDE;
@@ -44,6 +45,7 @@ body {
   background: var(--background);
   color: var(--text-color);
   padding-top: 186px;
+  overflow-x: hidden;
 }
 
 .search {
@@ -348,6 +350,98 @@ body {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+}
+main {
+  max-width: 1259px;
+  margin: 0 auto;
+}
+
+.baner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--baner-color);
+  width: 100%;
+}
+.baner .hero-banner-img {
+  max-width: 685px;
+  height: 510px;
+  width: 100%;
+  background-image: url("../../src/assets/hero-banner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.baner .hero-banner-promotion {
+  position: relative;
+  left: -56px;
+  max-width: 602px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  z-index: 2;
+}
+.baner .hero-banner-promotion h1 {
+  text-align: center;
+  font-family: var(--nunito-font-second);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.baner .hero-banner-promotion h1 span {
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 100%;
+}
+.baner .hero-banner-promotion p {
+  font-family: var(--nunito-font-second);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 30%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.baner .hero-banner-promotion h3 {
+  font-family: var(--nunito-font-second);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .baner .hero-banner-img {
+    background-position: right center;
+    min-width: 225px;
+    height: 306px;
+  }
+  .baner .hero-banner-promotion {
+    left: -12px;
+    margin-right: 38px;
+  }
+  .baner .hero-banner-promotion h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .baner .hero-banner-promotion h1 span {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .baner .hero-banner-promotion p {
+    font-size: 12px;
+  }
+  .baner .hero-banner-promotion h3 {
+    font-size: 32px;
   }
 }
 
