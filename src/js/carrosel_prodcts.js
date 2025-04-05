@@ -9,8 +9,8 @@ new Swiper('.card-wrapeper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.button-swiper-button-next',
+    prevEl: '.button-swiper-button-prev',
     },
 
    // Responsive breakpoints

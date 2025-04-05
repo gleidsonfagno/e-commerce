@@ -555,4 +555,71 @@ main {
   display: none;
 }
 
+.section-products .container-product {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 0 16px 16px;
+}
+.section-products .container-product .header-products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.section-products .container-product .header-products p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+}
+.section-products .container-product .header-products a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--grey-darkest);
+}
+.section-products .container-product .card-wrapeper .swiper-pagination {
+  bottom: -4px !important;
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-css {
+  width: 30px;
+  height: 30px;
+  background: var(--background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-css .arrow-icon {
+  fill: var(--primary-color);
+  transition: fill 0.3s ease;
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-css:hover {
+  background-color: var(--primary-color);
+  color: var(--background);
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-css:hover .arrow-icon {
+  fill: var(--background);
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-prev {
+  left: 0;
+}
+.section-products .container-product .card-wrapeper .button-swiper-button-next {
+  right: 0;
+}
+
+@media screen and (max-width: 390px) {
+  .section-products .container-product .card-wrapeper .button-swiper-button-prev,
+  .section-products .container-product .card-wrapeper .button-swiper-button-next {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
