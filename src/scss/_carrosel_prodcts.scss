@@ -71,6 +71,10 @@
       .button-swiper-button-next {
         right: 0;
       }
+
+      .swiper-pagination-bullet-active {
+        background-color: var(--grey-darkest);
+      }
     }
   }
 }
