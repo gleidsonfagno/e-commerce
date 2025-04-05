@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/stylesheets/index.css"  />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-   
-    <title>Avanti</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-promocao">
-        <p>
-          Ganhe <span class="destaque-promocao">R$10,00</span> de desconto no seu primeiro pedido. Utilize o
-          cupom <span class="desconto">DESCONTO10</span>
-        </p>
-      </div>
 
-     <div class="header-content" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link do gopgle fontes -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Nunito:wght@200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="build/stylesheets/index.css" />
+  <!-- Link do Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Avanti</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-promocao">
+      <p>
+        Ganhe <span class="destaque-promocao">R$10,00</span> de desconto no seu primeiro pedido. Utilize o
+        cupom <span class="desconto">DESCONTO10</span>
+      </p>
+    </div>
+
+    <div class="header-content">
 
       <div class="header-user-content">
         <div class="header-user">
           <button class="menu-mobile">
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="1" y1="12.4998" x2="22.7185" y2="12.4998" stroke="black" stroke-width="2" stroke-linecap="round"/>
-              <line x1="1" y1="23.1921" x2="22.7185" y2="23.1921" stroke="black" stroke-width="2" stroke-linecap="round"/>
-              <line x1="1" y1="1.80762" x2="22.7185" y2="1.80762" stroke="black" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              
+              <line x1="1" y1="12.4998" x2="22.7185" y2="12.4998" stroke="black" stroke-width="2"
+                stroke-linecap="round" />
+              <line x1="1" y1="23.1921" x2="22.7185" y2="23.1921" stroke="black" stroke-width="2"
+                stroke-linecap="round" />
+              <line x1="1" y1="1.80762" x2="22.7185" y2="1.80762" stroke="black" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+
           </button>
           <!-- logo e input de busca -->
           <article class="user-search">
             <img src="src/assets/logo-dark.png" alt="logo Avanti" class="header-logo" />
 
-          <div class="search " id="search">
-            <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
-            <img src="src/assets/icon/searach.svg" alt="search" />
-          </div>
-        </article>
-  
-  
+            <div class="search " id="search">
+              <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
+              <img src="src/assets/icon/searach.svg" alt="search" />
+            </div>
+          </article>
+
+
           <!-- fica o carrinho o icone do user -->
           <article class="user-content">
             <span class="user-info">
               <img src="src/assets/icon/icon-user.png" alt="user" class="icon-user" />
               <p>Ola, Jewelry!</p>
             </span>
-          
+
             <span class="cart-info">
               <img src="src/assets/icon/icon-cart.png" alt="cart" />
               <strong class="cart-count">2</strong>
             </span>
           </article>
-  
+
         </div>
 
         <div class="search">
-            <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
-            <img src="src/assets/icon/searach.svg" alt="search" />
-          </div>
+          <input type="text" class="input-search-css " placeholder="Digite aqui o que você procura" />
+          <img src="src/assets/icon/searach.svg" alt="search" />
+        </div>
       </div>
-      
+
       <nav class="menu" aria-label="Menu de Navegação">
         <ul>
           <li>
             <button class="menu-toggle">
-             
-               <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="1" y1="6" x2="13" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-<line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-<line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
+
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="6" x2="13" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
               <a href="#">Todas as Categorias</a>
             </button>
           </li>
@@ -98,7 +104,7 @@
         </ul>
 
       </nav>
-      
+
       <!--  O Conteiner que fica escondido e aparece com o clique ou hover -->
       <div class="container-menu">
         <div class="button-category">
@@ -138,50 +144,50 @@
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
-      
+
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
                 <img src="src/assets/icon/arrow.svg" alt="arrow" />
               </span>
             </button>
-      
+
             <button class="accordion">
               Departamento
               <span class="arrow">
@@ -189,138 +195,287 @@
               </span>
             </button>
           </div>
-      
-        <div class="panel-container">
-          <p class="category">Departamento</p>
-          <div class="panel">
-            <ul>
-              <li><a href="#">Fashion Trends</a></li>
-            <li><a href="#">Streetwear</a></li>
-            <li><a href="#">Vintage Clothing</a></li>
-            <li><a href="#">Shoes & Sneakers</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Handbags</a></li>
-            <li><a href="#">Jewelry</a></li>
-            <li><a href="#">Luxury Fashion</a></li>
-            </ul>
 
-            <ul>
-              <li><a href="#">Tech Gadgets</a></li>
-              <li><a href="#">Smartphones</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Wearables</a></li>
-              <li><a href="#">Smart Home</a></li>
-              <li><a href="#">Gaming Consoles</a></li>
-              <li><a href="#">VR/AR</a></li>
-              <li><a href="#">PC Components</a></li>
-            </ul>
+          <div class="panel-container">
+            <p class="category">Departamento</p>
+            <div class="panel">
+              <ul>
+                <li><a href="#">Fashion Trends</a></li>
+                <li><a href="#">Streetwear</a></li>
+                <li><a href="#">Vintage Clothing</a></li>
+                <li><a href="#">Shoes & Sneakers</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Handbags</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Luxury Fashion</a></li>
+              </ul>
 
-            <ul>
-              <li><a href="#">Tech Gadgets</a></li>
-              <li><a href="#">Smartphones</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Wearables</a></li>
-              <li><a href="#">Smart Home</a></li>
-              <li><a href="#">Gaming Consoles</a></li>
-              <li><a href="#">VR/AR</a></li>
-              <li><a href="#">PC Components</a></li>
-            </ul>
-          </ul>
+              <ul>
+                <li><a href="#">Tech Gadgets</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Wearables</a></li>
+                <li><a href="#">Smart Home</a></li>
+                <li><a href="#">Gaming Consoles</a></li>
+                <li><a href="#">VR/AR</a></li>
+                <li><a href="#">PC Components</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#">Tech Gadgets</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Wearables</a></li>
+                <li><a href="#">Smart Home</a></li>
+                <li><a href="#">Gaming Consoles</a></li>
+                <li><a href="#">VR/AR</a></li>
+                <li><a href="#">PC Components</a></li>
+              </ul>
+              </ul>
+            </div>
+
           </div>
-         
+
+          <article class="card-panel">
+            <h2>Confira os Produtos <br> <strong>Que <br> acabaram De chegar</strong></h2>
+            <button>Ver todos</button>
+          </article>
+
         </div>
-      
-        <article class="card-panel">
-          <h2>Confira os Produtos <br> <strong>Que  <br> acabaram De chegar</strong></h2>
-          <button>Ver todos</button>
-        </article>
 
       </div>
+    </div>
 
-      </div>
-     </div>
- 
-    </header>
-    
-    <section class="baner">
-      <div class="hero-banner-img">
+  </header>
+
+  <section class="baner">
+    <div class="hero-banner-img">
+    </div>
+
+    <div class="hero-banner-promotion">
+      <h1>super <span>sale</span> </h1>
+      <p>Selected items up to</p>
+      <h3> 50%off</h3>
+    </div>
+  </section>
+  <main>
+
+    <section>
+
+      <div class="swiper container-product">
+        <div class="card-wrapeper">
+
+          <ul class="card-item swiper-wrapper">
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Básica Branca">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Básica Branca 100% Algodão - Conforto Essencial</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 89,90</span> R$59,90</p>
+                    <span class="card-disont">
+                      33% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>6x de R$ 9,98</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Estampada Streetwear">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Estampada Streetwear - Edição Limitada</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 119,90</span> R$89,90</p>
+                    <span class="card-disont">
+                      25% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>10x de R$ 8,99</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Oversized Preta">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Oversized Preta - Tecido Premium com Caimento Solto</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 139,90</span> R$99,90</p>
+                    <span class="card-disont">
+                      28% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>10x de R$ 9,99</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Tie Dye Multicolorida">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Tie Dye Multicolorida - Estilo Retrô e Criativo</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 109,90</span> R$84,90</p>
+                    <span class="card-disont">
+                      23% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>7x de R$ 12,13</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Longline Minimalista">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Longline Minimalista - Estilo Moderno e Casual</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 94,90</span> R$69,90</p>
+                    <span class="card-disont">
+                      26% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>8x de R$ 8,73</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="swiper-slide">
+              <article class="card">
+                <div class="card-img">
+                  <span>Novo</span>
+                  <img src="./src/assets/card-item.png" alt="Camiseta Manga Raglan">
+                </div>
+
+                <div class="card-content">
+                  <h3>Camiseta Manga Raglan - Inspirada no Estilo Baseball</h3>
+
+                  <div class="card-price">
+                    <p> <span>R$ 99,90</span> R$74,90</p>
+                    <span class="card-disont">
+                      25% off
+                    </span>
+                  </div>
+
+                  <p>Ou em até <span>9x de R$ 8,32</span></p>
+                </div>
+
+                <div class="buy-button-card">
+                  <button class="add-to-cart">Comprar</button>
+                  <div class="counter hidden">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+
+          <div class="swiper-pagination"></div>
+
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+        </div>
       </div>
 
-      <div class="hero-banner-promotion">
-        <h1>super <span>sale</span>  </h1>
-        <p>Selected items up to</p>
-        <h3> 50%off</h3>
-      </div>
+
+
     </section>
-    <main>
 
-      <section >
-        <article class="card">
-          <div class="card-img">
-            <span>Novo</span>
-            <img src="./src/assets/card-item.png" alt="imagem do produto">
-          </div>
 
-          <div class="card-content">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit !</h3>
 
-            <div class="card-price">
-              <p> <span>R$ 100,00</span> R$79,90</p>
-              <span class="card-disont">
-                10% off
-              </span>
-            </div>
+  </main>
 
-            <p>Ou em até <span>10x de R$ 7,90</span></p>
-          </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/js/index.js"></script>
+</body>
 
-          <div class="buy-button-card">
-            <button class="add-to-cart">Comprar</button>
-          
-            <div class="counter hidden">
-              <button class="decrease">−</button>
-              <span class="quantity">1</span>
-              <button class="increase">+</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-img">
-            <span>Novo</span>
-            <img src="./src/assets/card-item.png" alt="imagem do produto">
-          </div>
-
-          <div class="card-content">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit !</h3>
-
-            <div class="card-price">
-              <p> <span>R$ 100,00</span> R$79,90</p>
-              <span class="card-disont">
-                10% off
-              </span>
-            </div>
-
-            <p>Ou em até <span>10x de R$ 7,90</span></p>
-          </div>
-
-          <div class="buy-button-card">
-            <button class="add-to-cart">Comprar</button>
-          
-            <div class="counter hidden">
-              <button class="decrease">−</button>
-              <span class="quantity">1</span>
-              <button class="increase">+</button>
-            </div>
-          </div>
-        </article>
-
-      </section>
-
-      
-
-    </main>
-    
-    <script src="/src//js/menu-toggle.js"></script>
-  </body>
 </html>
