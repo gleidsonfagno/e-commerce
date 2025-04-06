@@ -1,0 +1,38 @@
+.section-contact {
+
+  background-image: url("../../src/assets/banner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 256px 0;
+  .contatct-description {
+    background-color: var(--primary-color);
+    width: 100%;
+   
+    h2 {
+      font-family: var(--nunito-font-second);
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 140%;
+      color: var(--background);
+      text-align: center;
+      padding: 45px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .section-contact {
+        padding: 193px 0;
+        .contatct-description {
+            h2 {
+                font-weight: 600;
+                font-size: 16px;
+                
+            }
+        }
+    }
+}
