@@ -1,12 +1,11 @@
 @use "card";
 
 .section-products {
+  padding-top: 48px;
+    padding-bottom: 48px;
   .container-product {
-    margin-top: 96px;
-    margin-bottom: 96px;
-    
     padding: 0 16px 16px;
-    // padding-bottom: 30px;
+ 
     .header-products {
       display: flex;
       justify-content: space-between;
@@ -28,7 +27,6 @@
 
     .card-wrapeper {
       .swiper-pagination {
-        // margin-top: 16px;
         bottom: -4px !important;
       }
 
@@ -79,8 +77,16 @@
   }
 }
 
+// adicionando padding diferente no segundo container
+.section-products:nth-of-type(2){
+  padding-top: 46px;
+    padding-bottom: 64px;
+}
+
 @media screen and (max-width: 390px) {
     .section-products {
+      padding-top: 28px;
+      padding-bottom: 28px;
       .container-product {
         .card-wrapeper {
           .button-swiper-button-prev,
@@ -90,5 +96,11 @@
         }
       }
     }
+    .section-products:nth-of-type(2){
+      display: none;
+    }
+
   }
+
+
   
