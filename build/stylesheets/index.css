@@ -36,7 +36,7 @@ button {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   object-fit: contain;
   height: fit-content;
@@ -360,7 +360,7 @@ body {
     flex-direction: column;
   }
 }
-main {
+main .home {
   max-width: 1259px;
   margin: 0 auto;
 }
@@ -657,13 +657,12 @@ main {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 32px 77px;
+  padding: 77px 31px;
   background-color: var(--product-highlight-color);
   width: 100%;
 }
 .section-product-highlight .product-highlight-img img {
   max-width: 523px;
-  width: 100%;
 }
 .section-product-highlight .product-highlight-details {
   width: 100%;
@@ -787,6 +786,39 @@ main {
   }
   .section-addres .addres .addres-content .addres-card p {
     font-size: 12px;
+  }
+}
+.section-contact {
+  background-image: url("../../src/assets/banner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 256px 0;
+}
+.section-contact .contatct-description {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+.section-contact .contatct-description h2 {
+  font-family: var(--nunito-font-second);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  color: var(--background);
+  text-align: center;
+  padding: 45px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section-contact {
+    padding: 193px 0;
+  }
+  .section-contact .contatct-description h2 {
+    font-weight: 600;
+    font-size: 16px;
   }
 }
 

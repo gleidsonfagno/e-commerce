@@ -9,12 +9,12 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 32px 77px;
+    padding: 77px 31px ;
     background-color: var(--product-highlight-color);
     width: 100%;
     img {
       max-width: 523px;
-      width: 100%;
+      // width: fit-content !important;
     }
   }
 
