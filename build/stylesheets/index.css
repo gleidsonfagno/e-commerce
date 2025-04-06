@@ -36,7 +36,7 @@ button {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   object-fit: contain;
   height: fit-content;
@@ -186,6 +186,10 @@ body {
   }
   .header .header-content .header-user-content .header-user .menu-mobile {
     display: flex;
+  }
+  .header .header-content .header-user-content .header-user .user-search img {
+    max-width: 152px;
+    width: 100%;
   }
   .header .header-content .header-user-content .header-user .user-search #search {
     display: none;

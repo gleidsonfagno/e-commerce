@@ -126,6 +126,10 @@
           }
   
           .user-search {
+            img {
+              max-width: 152px;
+              width: 100%;
+            }
             #search {
               display: none;
               max-width: 594px;
