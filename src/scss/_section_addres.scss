@@ -63,9 +63,8 @@
     margin-bottom: 28px;
     .addres {
       padding: 28px 20px;
-      display: flex;
       flex-direction: column-reverse;
-      gap: 21px;
+      gap: 21px !important;
 
       .addres-content {
         h2 {

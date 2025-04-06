@@ -698,8 +698,8 @@ main .home {
     width: 100%;
   }
   .product-highlight-details {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 100%;
+    max-width: 100%;
     padding: 0 16px;
   }
   .product-highlight-details h2 {
@@ -771,9 +771,8 @@ main .home {
   }
   .section-addres .addres {
     padding: 28px 20px;
-    display: flex;
     flex-direction: column-reverse;
-    gap: 21px;
+    gap: 21px !important;
   }
   .section-addres .addres .addres-content h2 {
     font-size: 20px;
@@ -817,7 +816,7 @@ main .home {
   line-height: 140%;
   color: var(--background);
   text-align: center;
-  padding: 45px 0;
+  padding: 45px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -827,6 +826,7 @@ main .home {
   .section-contact .contatct-description h2 {
     font-weight: 600;
     font-size: 16px;
+    padding: 18px;
   }
 }
 .newsletter {
