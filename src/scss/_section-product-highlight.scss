@@ -14,7 +14,7 @@
     width: 100%;
     img {
       max-width: 523px;
-
+      width: 100%;
     }
   }
 
@@ -45,6 +45,8 @@
       padding: 0;
       img {
         width: 100%;
+        max-width: 391px;
+        height: 390px;
       }
     }
   }
@@ -58,7 +60,7 @@
     }
 
     p {
-      font-size: 14px;
+      font-size: 14px !important;
     }
   }
 }
