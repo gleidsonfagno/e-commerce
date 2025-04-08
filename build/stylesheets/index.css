@@ -800,6 +800,10 @@ main .home {
   .section-addres .addres .addres-content .addres-card p {
     font-size: 12px;
   }
+  .section-addres .addres .addres-img img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .section-contact {
   background-image: url("../../src/assets/banner.png");
@@ -879,7 +883,7 @@ main .home {
   display: flex;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .newsletter form .checkbox-content .checkbox {
   max-width: 16px;
@@ -935,6 +939,51 @@ main .home {
     line-height: 100%;
   }
 }
+.faq-container {
+  display: flex;
+  gap: 110px;
+}
+.faq-container .faq-item .faq-question {
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+}
+.faq-container .faq-item .faq-answer h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+.faq-container .faq-item .faq-answer h5 a {
+  color: var(--grey-darkest);
+}
+.faq-container .faq-item .faq-answer h5 .atendimento-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .faq-container .faq-item {
+    border-bottom: 1px solid var(--strocker-color);
+  }
+  .faq-container .faq-item .faq-question {
+    padding: 16px 0;
+    cursor: pointer;
+  }
+  .faq-container .faq-item .faq-answer {
+    max-height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-container .faq-item .open {
+    max-height: 140px;
+  }
+}
 footer {
   max-width: 1259px;
   margin: 0 auto;
@@ -958,28 +1007,6 @@ footer .footer-header .footer-social-links .social-links span img {
   width: 100%;
   max-width: 26px;
 }
-footer .footer-header .footer-info {
-  display: flex;
-  gap: 110px;
-}
-footer .footer-header .footer-info .footer-details h4 {
-  padding-bottom: 11px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-}
-footer .footer-header .footer-info .footer-details .detail-content h5 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-}
-footer .footer-header .footer-info .footer-details .detail-content h5 a {
-  color: var(--grey-darkest);
-}
-footer .footer-header .footer-info .footer-details .detail-content h5 .atendimento-footer {
-  display: flex;
-  flex-direction: column;
-}
 
 @media screen and (max-width: 768px) {
   footer .footer-header {
@@ -992,17 +1019,6 @@ footer .footer-header .footer-info .footer-details .detail-content h5 .atendimen
     flex-direction: column;
     gap: 40px;
     align-items: center;
-  }
-  footer .footer-header .footer-info {
-    flex-direction: column;
-    gap: 0;
-  }
-  footer .footer-header .footer-info .footer-details {
-    border-bottom: 1px solid var(--strocker-color);
-  }
-  footer .footer-header .footer-info .footer-details .detail-content {
-    display: none;
-    width: 100%;
   }
 }
 
