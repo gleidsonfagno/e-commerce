@@ -1,3 +1,5 @@
+@use "faq-toggle";
+
 footer {
   max-width: 1259px;
   margin: 0 auto;
@@ -22,35 +24,6 @@ footer {
         }
       }
     }
-
-    .footer-info {
-      display: flex;
-      gap: 110px;
-      .footer-details {
-        h4 {
-          padding-bottom: 11px;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 100%;
-        }
-
-        .detail-content {
-          // display: none;
-          h5 {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 28px;
-            a {
-              color: var(--grey-darkest);
-            }
-            .atendimento-footer {
-              display: flex;
-              flex-direction: column;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -67,20 +40,6 @@ footer {
         flex-direction: column;
         gap: 40px;
         align-items: center;
-      }
-
-      .footer-info {
-        flex-direction: column;
-        gap: 0;
-        .footer-details {
-            border-bottom: 1px solid var(--strocker-color);
-
-            .detail-content {
-                display: none;
-                width: 100%;
-            }
-        }
-        
       }
     }
   }
