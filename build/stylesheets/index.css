@@ -948,6 +948,11 @@ main .home {
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-container .faq-item .faq-question span {
+  display: none;
 }
 .faq-container .faq-item .faq-answer h5 {
   font-weight: 400;
@@ -974,6 +979,13 @@ main .home {
     padding: 16px 0;
     cursor: pointer;
   }
+  .faq-container .faq-item .faq-question span {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .faq-container .faq-item .faq-question .rotated {
+    transform: rotate(180deg);
+  }
   .faq-container .faq-item .faq-answer {
     max-height: 0px;
     width: 100%;
@@ -982,6 +994,9 @@ main .home {
   }
   .faq-container .faq-item .open {
     max-height: 140px;
+  }
+  .faq-container .faq-item:nth-of-type(1) {
+    border-top: 1px solid var(--strocker-color);
   }
 }
 footer {
