@@ -1,0 +1,26 @@
+.security-seals{
+    text-align: center;
+    p {
+        max-width: 1074px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        padding: 40px 16px;
+    }
+    .seals {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        max-width: 295px;
+        margin: auto;
+        span {
+            img{
+                max-width: 57px;
+            }
+        }
+    }
+}
