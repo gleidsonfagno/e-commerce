@@ -1,0 +1,20 @@
+.brand-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 34px;
+    padding: 64px 16px;
+    span {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand-logos {
+        padding: 48px 16px 40px 16px;
+    }
+}
