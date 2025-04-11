@@ -1,3 +1,3 @@
 import "./faq-toggle.js"
 import "./carrosel_prodcts.js"
-import "./menu-toggle.js"
+import "./menu.js"

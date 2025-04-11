@@ -421,7 +421,7 @@ main .home {
   text-transform: uppercase;
   color: var(--primary-color);
 }
-.baner .hero-banner-promotion h3 {
+.baner .hero-banner-promotion h4 {
   font-family: var(--nunito-font-second);
   font-weight: 700;
   font-size: 60px;
