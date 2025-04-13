@@ -3,7 +3,7 @@
     "useTabs": false,
     "singleQuote": false,
     "htmlWhitespaceSensitivity": "css",
-    "semi": true,
+    "semi": false,
     "trailingComma": "none"
   }
   
