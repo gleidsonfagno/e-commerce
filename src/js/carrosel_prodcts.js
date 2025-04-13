@@ -1,10 +1,11 @@
 new Swiper('.card-wrapeper', {
-    loop: true,
+    loop: false,
     spaceBetween: 17,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      clickable: true,
+      dynamicBullets: true,
     },
   
     // Navigation arrows

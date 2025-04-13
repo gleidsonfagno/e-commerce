@@ -176,6 +176,11 @@ body {
   top: -5px;
   right: -9px;
 }
+.header .header-content .header-user-content .result-search {
+  font-size: 16px !important;
+  text-align: center !important;
+  font-size: bold !important;
+}
 
 @media screen and (max-width: 768px) {
   .header .header-content {
@@ -458,6 +463,26 @@ main .home {
     font-size: 32px;
   }
 }
+.not-found {
+  margin-top: 24px;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--background-color-addres);
+  color: var(--dark-grey);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 409px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hiden-found {
+  display: none;
+}
+
 .card {
   max-width: 238px;
   width: 100%;
@@ -572,7 +597,7 @@ main .home {
   padding-bottom: 48px;
 }
 .section-products .container-product {
-  padding: 0 16px 16px;
+  padding: 0 16px 20px;
 }
 .section-products .container-product .header-products {
   display: flex;
@@ -627,6 +652,9 @@ main .home {
 }
 .section-products .container-product .card-wrapeper .button-swiper-button-next {
   right: 0;
+}
+.section-products .container-product .card-wrapeper .swiper-pagination {
+  padding: 9px 0;
 }
 .section-products .container-product .card-wrapeper .swiper-pagination-bullet-active {
   background-color: var(--grey-darkest);
@@ -857,7 +885,7 @@ main .home {
 .newsletter h2 span {
   color: var(--primary-color);
 }
-.newsletter form {
+.newsletter #form-newsletter {
   width: 100%;
   background-color: var(--background-color-addres);
   padding: 64px 0;
@@ -866,7 +894,7 @@ main .home {
   gap: 24px;
   border-radius: 8px;
 }
-.newsletter form input {
+.newsletter #form-newsletter input {
   padding: 15px 24px;
   width: 280px;
   background-color: var(--background);
@@ -874,34 +902,34 @@ main .home {
   outline: none;
   border: none;
 }
-.newsletter form input[placeholder] {
+.newsletter #form-newsletter input[placeholder] {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
 }
-.newsletter form .checkbox-content {
+.newsletter #form-newsletter .checkbox-content {
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: space-evenly;
 }
-.newsletter form .checkbox-content .checkbox {
+.newsletter #form-newsletter .checkbox-content .checkbox {
   max-width: 16px;
   height: 16px;
 }
-.newsletter form .checkbox-content .checkbox #checkbox {
+.newsletter #form-newsletter .checkbox-content .checkbox #checkbox {
   max-width: 16px;
   height: 16px;
   border-radius: 4px;
   border-width: 1px;
 }
-.newsletter form .checkbox-content p {
+.newsletter #form-newsletter .checkbox-content p {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
   color: var(--dark-grey);
 }
-.newsletter form .checkbox-content p a {
+.newsletter #form-newsletter .checkbox-content p a {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
@@ -909,7 +937,7 @@ main .home {
   text-decoration-style: solid;
   color: var(--dark-grey);
 }
-.newsletter form button {
+.newsletter #form-newsletter button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -924,16 +952,16 @@ main .home {
   .newsletter {
     gap: 16px;
   }
-  .newsletter form {
+  .newsletter #form-newsletter {
     flex-direction: column;
     text-align: center;
     padding: 38px 16px;
   }
-  .newsletter form input {
+  .newsletter #form-newsletter input {
     width: 100%;
     background-color: var(--background);
   }
-  .newsletter form input[placeholder] {
+  .newsletter #form-newsletter input[placeholder] {
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;

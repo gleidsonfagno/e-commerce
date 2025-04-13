@@ -17,7 +17,7 @@
     }
   }
 
-  form {
+  #form-newsletter {
     width: 100%;
     background-color: var(--background-color-addres);
     padding: 64px 0;
@@ -90,7 +90,7 @@
 @media screen and (max-width: 768px) {
   .newsletter {
     gap: 16px;
-    form {
+    #form-newsletter {
       flex-direction: column;
       text-align: center;
       padding: 38px 16px;

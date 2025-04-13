@@ -1,10 +1,11 @@
+@use "not_found";
 @use "card";
 
 .section-products {
   padding-top: 48px;
     padding-bottom: 48px;
   .container-product {
-    padding: 0 16px 16px;
+    padding: 0 16px 20px;
  
     .header-products {
       display: flex;
@@ -70,6 +71,10 @@
         right: 0;
       }
 
+      .swiper-pagination {
+
+        padding: 9px 0;
+      }
       .swiper-pagination-bullet-active {
         background-color: var(--grey-darkest);
       }

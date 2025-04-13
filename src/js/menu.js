@@ -46,10 +46,10 @@ li_buttoon.addEventListener("click", () => {
   OpenCategory();
 });
 
-button_menu.addEventListener("mouseenter", () => {
-  OpenMenu();
-});
+// button_menu.addEventListener("mouseenter", () => {
+//   OpenMenu();
+// });
 
-li_buttoon.addEventListener("mouseenter", () => {
-  OpenCategory();
-});
+// li_buttoon.addEventListener("mouseenter", () => {
+//   OpenCategory();
+// });

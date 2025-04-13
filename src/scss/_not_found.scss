@@ -1,0 +1,20 @@
+.not-found {
+    margin-top: 24px;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--background-color-addres);
+    color: var(--dark-grey);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 409px;
+    display: flex;
+    justify-content: center;
+    // height: 100%;
+    align-items: center;
+    width: 100%;
+  }
+  
+.hiden-found {
+    display: none;
+}
