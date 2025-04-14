@@ -274,6 +274,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 234px;
+  max-height: 298px;
   width: 100%;
   overflow-y: scroll;
   padding-right: 14px;
