@@ -2,6 +2,8 @@ const ListItem = document.querySelectorAll(".card-item");
 const resultSearch = document.getElementById("result-search");
 const buttons = document.getElementById("btn-search");
 
+const categoryContent = document.querySelector(".category-links")
+
 async function getProducts(searchParams) {
   try {
     // se chamar a funçao sem parametro carrega os produtos normalmente
@@ -95,3 +97,35 @@ buttons.addEventListener("click", (event) => {
 window.addEventListener("DOMContentLoaded", () => {
   getProducts();
 });
+
+
+async function getCategory() {
+  const urlCategory = "https://dummyjson.com/products/categories"
+
+  const response = await fetch(urlCategory)
+  const data = await response.json()
+  const categorys = data
+
+  console.log(categorys)
+
+  const categoryName = categorys.map((category) => {
+    return `
+    <button class="accordion " values="${category.name}" >
+              ${category.name}
+              <span class="arrow">
+                <img src="src/assets/icon/arrow.svg" alt="arrow" />
+              </span>
+            </button>
+    `
+  })
+
+  categoryContent.innerHTML = categoryName.join("")
+
+}
+
+
+// quando o html e carregado chama a função e mostra os dados da api sem parametros
+window.addEventListener("DOMContentLoaded", () => {
+  getProducts()
+  getCategory()
+})
