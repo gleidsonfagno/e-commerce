@@ -479,6 +479,10 @@ main .home {
   width: 100%;
 }
 
+.hiden-found {
+  display: none;
+}
+
 .card {
   max-width: 238px;
   width: 100%;
@@ -611,6 +615,9 @@ main .home {
   line-height: 20px;
   text-align: center;
   color: var(--grey-darkest);
+}
+.section-products .container-product .card-wrapeper .card-item .swiper-slide {
+  display: block;
 }
 .section-products .container-product .card-wrapeper .swiper-pagination {
   bottom: -4px !important;

@@ -27,6 +27,11 @@
     }
 
     .card-wrapeper {
+      .card-item {
+        .swiper-slide{
+          display: block;
+        }
+      }
       .swiper-pagination {
         bottom: -4px !important;
       }
