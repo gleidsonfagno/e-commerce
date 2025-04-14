@@ -262,7 +262,7 @@ body {
 .container-menu .button-category .category-links {
   display: flex;
   flex-direction: column;
-  max-width: 234px;
+  max-width: 239px;
   max-height: 298px;
   width: 100%;
   overflow-y: scroll;
