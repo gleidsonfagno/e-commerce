@@ -278,9 +278,6 @@ body {
   width: 100%;
   overflow-y: scroll;
   padding-right: 14px;
-  padding: 20px 20px 11px 16px;
-  background: #F5F5F5;
-  max-height: 329px;
 }
 .menu .container-menu .container-category .category-links::-webkit-scrollbar {
   width: 3px;
