@@ -1,64 +1,69 @@
 const buttonMenu = document.querySelector(".menu-toggle")
-const listButtoon = document.querySelector(".menu-toggle-li")
-const content_menu = document.querySelector(".container-menu")
+const listButtoon = document.querySelectorAll(".menu-category")
+const contentMenu = document.querySelector(".container-menu")
 
 const categoryLinks = document.querySelector(".category-links")
-const paragraph_category = document.querySelector(".category")
+const paragraphCategory = document.querySelector(".category")
 
+// butao para abrir o menu mobile
 const buttonMobile = document.querySelector(".menu-mobile")
+// botôes par exibir as categorias
+// const categoryButtons = document.querySelectorAll(".accordion")
 
-let menu = false
+const panelContent = document.querySelector(".panel-content")
+
 
 function OpenMenu() {
-  if (!menu) {
-    content_menu.style.display = "block"
-    categoryLinks.style.display = "flex"
-    paragraph_category.style.display = "none"
-    menu = true
-  } else {
-    content_menu.style.display = "none"
-    menu = false
+  if(contentMenu.classList.contains("hidden")){
+    console.log("verdade")
+    contentMenu.classList.remove('hidden');
+    categoryLinks.classList.remove("hidden")
+    paragraphCategory.style.display = "none"
+  }
+  else {
+    contentMenu.classList.add('hidden');
   }
 }
+
 
 function OpenCategory() {
-  if (!menu) {
-    content_menu.style.display = "block"
-    categoryLinks.style.display = "none"
-    paragraph_category.style.display = "flex"
-    menu = true
-  } else {
-    content_menu.style.display = "none"
-    menu = false
-  }
+  contentMenu.classList.remove("hidden")
+  categoryLinks.classList.add("hidden")
+  paragraphCategory.style.display = "block"
+
+}
+
+function closeCategory() {
+  contentMenu.classList.add("hidden")
+  categoryLinks.classList.add("hidden")
+  paragraphCategory.style.display = "block"
 }
 
 
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth <= 768) {
-    content_menu.style.display = "none"
-    return (menu = false)
-  }
-})
-
+// abrir o todas as categorias
 buttonMenu.addEventListener("click", () => {
   OpenMenu()
 })
 
-listButtoon.addEventListener("click", () => {
-  OpenCategory()
-})
+buttonMenu.addEventListener("mouseenter", () => {
+  OpenMenu();
+});
 
 buttonMobile.addEventListener("click", () => {
   OpenMenu()
 })
+""
+// abrir as categorias no nav
+listButtoon.forEach(button => {
+  button.addEventListener("mouseenter", () => {
+    OpenCategory();
+  });
 
-// buttonMenu.addEventListener("mouseenter", () => {
-//   OpenMenu();
-// });
+  button.addEventListener("click", () => {
+    OpenCategory();
+  });
+});
 
-// listButtoon.addEventListener("mouseenter", () => {
-//   OpenCategory();
-// });
-
+contentMenu.addEventListener("mouseleave", ()=> {
+  closeCategory()
+})
