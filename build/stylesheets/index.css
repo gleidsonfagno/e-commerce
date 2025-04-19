@@ -9,6 +9,7 @@
   --strocker-color: #DDDDDD;
   --button-discount: #5EC0BE;
   --buy-button: #005CFF;
+  --buy-button-hover: #004bcc;
   --product-highlight-color: #C2C2C2;
   --text-color-addres:#4F4F4F;
   --background-color-addres: #DEDEDE ;
@@ -600,10 +601,13 @@ main .home {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0%;
   text-align: center;
   padding: 10px;
   border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.card .buy-button-card .add-to-cart:hover {
+  background-color: var(--buy-button-hover);
 }
 .card .buy-button-card .counter {
   width: 100%;
