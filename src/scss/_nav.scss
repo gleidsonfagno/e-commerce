@@ -56,23 +56,25 @@
     
     
     .container-category {
+
       display: flex;
       flex-direction: row;
+
       width: 100%;
       gap: 18px;
       align-items: stretch;
       max-height: 329px;
 
-    .category-links {
-      display: flex;
-
-      flex-direction: column;
-      max-width: 234px;
-      max-height: 298px;
-      width: 100%;
-      overflow-y: scroll;
-      padding-right: 14px;
-
+      .category-links {
+        display: flex;
+        flex-direction: column;
+        max-width: 234px;
+        width: 100%;
+        overflow-y: scroll;
+        padding-right: 14px;
+        padding: 20px 20px 11px 16px;
+        background: #E7E7EA;
+        max-height: 329px;
         &::-webkit-scrollbar {
           width: 3px;
         }
