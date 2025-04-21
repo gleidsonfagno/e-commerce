@@ -15,7 +15,6 @@ const panelContent = document.querySelector(".panel-content")
 
 function OpenMenu() {
   if(contentMenu.classList.contains("hidden")){
-    console.log("verdade")
     contentMenu.classList.remove('hidden');
     categoryLinks.classList.remove("hidden")
     paragraphCategory.style.display = "none"
