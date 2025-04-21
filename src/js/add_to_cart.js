@@ -18,4 +18,4 @@ buttons.forEach((button) => {
       cartInfo.classList.remove('active');
     }, 2000);
   });
-});
+}); 
