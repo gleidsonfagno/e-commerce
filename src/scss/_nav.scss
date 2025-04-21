@@ -56,8 +56,10 @@
     
     
     .container-category {
+
       display: flex;
       flex-direction: row;
+
       width: 100%;
       gap: 18px;
       align-items: stretch;
@@ -73,7 +75,6 @@
         padding: 20px 20px 11px 16px;
         background: #E7E7EA;
         max-height: 329px;
-
         &::-webkit-scrollbar {
           width: 3px;
         }
